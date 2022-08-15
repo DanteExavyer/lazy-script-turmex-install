@@ -1,12 +1,14 @@
 
 on #push or pull request events but only for the "main" branch
-  push:
+  push:on 
     branches: [ "main" ]
-  pull_request:
+  pull_request:on
+
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:run
+  workflow_dispatch:build
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
