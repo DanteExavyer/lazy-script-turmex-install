@@ -1,9 +1,9 @@
 
  #push or pull request events but only for the "main" branch
-  push:yes 
-    branches:[main]
-  pull_request:yes
-     branches:[main]
+  push: yes 
+    branches: main
+  pull_request: yes
+     branches: main
 
 
   workflow_dispatch:build
