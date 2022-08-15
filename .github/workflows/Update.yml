@@ -30,7 +30,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: upgrade
-        run:| apt upgrade
+        run: | apt upgrade
                 
 
           
