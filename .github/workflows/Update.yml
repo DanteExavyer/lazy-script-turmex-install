@@ -1,24 +1,21 @@
 
  #push or pull request events but only for the "main" branch
-  push: yes 
-    branches: main
-  pull_request: yes
-     branches: main
+  push: 
+    branches: [main]
+  pull_request: 
+     branches: [main]
 
 
   workflow_dispatch:build
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:#run build
+jobs:
 
   # This workflow contains a single job called "build"
-  build:$ apt upgdate&&
-            Apt upgrade
-
- Build 2:avtions/y actions:enter
+  build:
        
     # The type of runner that the job will run on
-    runs-on:termux
+    runs-on: termux-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,11 +27,12 @@ jobs:#run build
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: upgrade
-        run:|$ apt update&&
-                Spr upgrade
+      - name: 
+        run: |
+apt update&&
+                Apt upgrade
 
-          Run /y    action:enter
+          Run:  
           echo Add other actions to build,
           echo test, and deploy your project.
 Echo test
