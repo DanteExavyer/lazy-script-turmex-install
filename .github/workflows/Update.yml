@@ -1,8 +1,8 @@
 
-on #push or pull request events but only for the "main" branch
-  push:on 
+ #push or pull request events but only for the "main" branch
+  push:yes 
     branches:[main]
-  pull_request:on
+  pull_request:yes
      branches:[main]
 
 
