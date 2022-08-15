@@ -28,11 +28,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: 
-        run: |
-apt update&&
-                Apt upgrade
+        run: | apt update
 
-          Run:  
+          Run:  | apt upgrade
           echo Add other actions to build,
           echo test, and deploy your project.
 Echo test
