@@ -3,14 +3,14 @@ on #push or pull request events but only for the "main" branch
   push:on 
     branches: [ "main" ]
   pull_request:on
-
-    branches: [ "main" ]
+     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch: 
+  workflow_dispatch: #run
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+jobs:#run build
+
   # This workflow contains a single job called "build"
   build: $ apt upgdate&&
             Apt upgrade
