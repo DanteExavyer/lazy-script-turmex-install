@@ -3,7 +3,7 @@ on #push or pull request events but only for the "main" branch
   push:on 
     branches:[main]
   pull_request:on
-     branches: [main]
+     branches:[main]
 
 
   workflow_dispatch: #run
