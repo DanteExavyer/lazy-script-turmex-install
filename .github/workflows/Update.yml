@@ -1,12 +1,12 @@
 
  #push or pull request events but only for the "main" branch
-  push: 
+  push: on
     branches: [main]
-  pull_request: 
+  pull_request: on
      branches: [main]
 
 
-  workflow_dispatch:build
+  workflow_dispatch: build
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,11 +24,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: 
-        run: echo Hello, world!
+        run: apt update&&
 
       # Runs a set of commands using the runners shell
       - name: 
-        run: | apt update
+        run: | apt upgrade
 
           Run:  | apt upgrade
           echo Add other actions to build,
